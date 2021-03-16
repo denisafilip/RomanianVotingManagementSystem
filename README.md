@@ -2,4 +2,4 @@
 
 An application that simulates electronic voting for Romania. 
 
-# Developed by: Filip Denisa
+### Developed by: Filip Denisa
