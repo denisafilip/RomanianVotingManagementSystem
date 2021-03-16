@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1128.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.elections.PresidentialController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1134.0" prefWidth="1109.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="lblElection" layoutX="40.0" layoutY="24.0" prefHeight="27.0" prefWidth="573.0" text="ALEGERI PREZIDENȚIALE" AnchorPane.bottomAnchor="1083.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="497.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="27.0" layoutY="81.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="769.5999999999999" AnchorPane.topAnchor="81.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVoteUSR" layoutX="183.0" layoutY="236.0" mnemonicParsing="false" onAction="#voteUSR" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.199999999999978" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="15.199999999999903" AnchorPane.topAnchor="237.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.8" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="215.12381134033194" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/Alianta_2020-USR-PLUS.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="29.0" layoutY="97.0" maxWidth="246.0" prefHeight="125.0" prefWidth="246.0" text="Alianța 2020 USR PLUS" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="97.0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedUSR" fitHeight="35.0" fitWidth="26.0" layoutX="150.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="405.0" layoutY="81.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="405.0" AnchorPane.topAnchor="81.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVotePNL" layoutX="183.0" layoutY="236.0" mnemonicParsing="false" onAction="#votePNL" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.199999999999978" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="15.199999999999903" AnchorPane.topAnchor="237.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.8" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="215.12381134033194" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/National_Liberal_Party_Romania.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="10.0" layoutY="95.0" maxWidth="280.0" prefHeight="126.0" prefWidth="280.0" text="Partidul Național Liberal" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="73.99999999999997" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.599999999999909" AnchorPane.topAnchor="91.0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedPNL" fitHeight="35.0" fitWidth="26.0" layoutX="150.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnBack" layoutX="967.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBackToElection" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Înapoi" textFill="WHITE" AnchorPane.bottomAnchor="1081.2" AnchorPane.leftAnchor="967.1999999999999" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane layoutX="27.0" layoutY="406.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="769.0" AnchorPane.topAnchor="406.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVoteUDMR" layoutX="184.0" layoutY="236.0" mnemonicParsing="false" onAction="#voteUDMR" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.199999999999978" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="13.199999999999903" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="198.2" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="215.12381134033194" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/udmr-logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="17.0" layoutY="94.0" maxWidth="266.0" prefHeight="126.0" prefWidth="266.0" text="Uniunea Democratică Maghiară din România" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="73.99999999999997" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.599999999999909" AnchorPane.topAnchor="91.0">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedUDMR" fitHeight="35.0" fitWidth="26.0" layoutX="149.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="383.0" layoutY="406.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="405.0" AnchorPane.topAnchor="406.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVotePMP" layoutX="183.0" layoutY="236.0" mnemonicParsing="false" onAction="#votePMP" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.199999999999978" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="13.1" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="198.2" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="217.40000305175772" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/pmp-partidul-miscarea-populara-logo-31D1C63157-seeklogo.com.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="8.0" layoutY="93.0" maxWidth="302.0" prefHeight="118.0" prefWidth="286.0" text="Partidul Mișcarea Populară" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="93.0">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedPMP" fitHeight="35.0" fitWidth="26.0" layoutX="150.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="31.0" layoutY="732.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="769.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVotePRO" layoutX="184.0" layoutY="236.0" mnemonicParsing="false" onAction="#votePRO" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.1" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="13.1" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.8" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="212.05033264160147" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/PRORomania.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="-1.0" layoutY="91.0" maxWidth="302.0" prefHeight="126.0" prefWidth="302.0" text="PRO România" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="73.99999999999997" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.599999999999909" AnchorPane.topAnchor="91.0">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedPRO" fitHeight="35.0" fitWidth="26.0" layoutX="151.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="383.0" layoutY="732.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="405.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVotePOL" layoutX="183.0" layoutY="236.0" mnemonicParsing="false" onAction="#votePOL" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.199999999999978" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="13.199999999999903" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="198.2" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="212.05033264160147" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/logo_pol_v3.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="-2.0" layoutY="85.0" maxWidth="302.0" prefHeight="126.0" prefWidth="302.0" text="Partidul Oamenilor Liberi" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="73.4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.8000000000000682" AnchorPane.topAnchor="86.0">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedPOL" fitHeight="35.0" fitWidth="26.0" layoutX="150.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="743.0" layoutY="81.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="769.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="81.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVotePSD" layoutX="183.0" layoutY="236.0" mnemonicParsing="false" onAction="#votePSD" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="14.199999999999978" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="14.199999999999903" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.8" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="215.12381134033194" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/Partidul_Social_Democrat_logo.svg.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="10.0" layoutY="94.0" maxWidth="280.0" prefHeight="126.0" prefWidth="280.0" text="Partidul Social Democrat" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="73.99999999999997" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.599999999999909" AnchorPane.topAnchor="91.0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedPSD" fitHeight="35.0" fitWidth="26.0" layoutX="151.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="769.0" layoutY="406.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="769.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="406.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVoteAUR" layoutX="184.0" layoutY="236.0" mnemonicParsing="false" onAction="#voteAUR" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.1" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="13.1" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.8" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="217.40000305175772" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/aur.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="10.0" layoutY="91.0" maxWidth="280.0" prefHeight="122.0" prefWidth="280.0" text="Alianța pentru Unirea Românilor" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="72.99999999999997" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.599999999999909" AnchorPane.topAnchor="90.0">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedAUR" fitHeight="35.0" fitWidth="26.0" layoutX="151.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="743.0" layoutY="732.0" prefHeight="282.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" AnchorPane.leftAnchor="769.0" AnchorPane.rightAnchor="40.0">
+               <effect>
+                  <DropShadow height="11.47" offsetX="1.8" radius="5.235" width="11.47" />
+               </effect>
+               <children>
+                  <Button fx:id="btnVotePRU" layoutX="184.0" layoutY="236.0" mnemonicParsing="false" onAction="#votePRU" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Votează" textFill="WHITE" AnchorPane.bottomAnchor="15.1" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="14.199999999999903" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="198.2" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="215.5999999999999" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@images/Word-image.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="-1.0" layoutY="85.0" maxWidth="302.0" prefHeight="126.0" prefWidth="302.0" text="Partidul România Unită" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="72.4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.8000000000000682" AnchorPane.topAnchor="85.0">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVotedPRU" fitHeight="35.0" fitWidth="26.0" layoutX="151.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/check2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

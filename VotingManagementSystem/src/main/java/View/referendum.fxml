@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="770.0" prefWidth="1128.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.elections.ReferendumController">
+   <children>
+      <Label fx:id="lblElection" layoutX="50.0" layoutY="34.0" prefHeight="27.0" prefWidth="573.0" text="REFERENDUM" AnchorPane.bottomAnchor="708.8" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="504.4" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="977.0" layoutY="32.0" mnemonicParsing="false" onAction="#goBackToElection" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #2554a1;" text="Înapoi" textFill="WHITE" AnchorPane.bottomAnchor="706.8" AnchorPane.leftAnchor="977.0" AnchorPane.rightAnchor="48.599999999999994" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblQuestion1" alignment="CENTER" layoutX="277.0" layoutY="84.0" prefHeight="126.0" prefWidth="574.0" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="559.6" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="276.6" AnchorPane.topAnchor="84.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnYes1" layoutX="271.0" layoutY="200.0" mnemonicParsing="false" onAction="#voteYesInFirstReferendum" prefHeight="50.0" prefWidth="586.0" style="-fx-background-color: #99baf0;" text="DA" textAlignment="CENTER" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="270.6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#aca6a6" height="6.7" offsetX="2.5" radius="2.85" width="6.7" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnNo1" layoutX="271.0" layoutY="269.0" mnemonicParsing="false" onAction="#voteNoInFirstReferendum" prefHeight="50.0" prefWidth="586.0" style="-fx-background-color: #99baf0;" text="NU" textAlignment="CENTER" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="270.6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#aca6a6" height="6.7" offsetX="2.5" radius="2.85" width="6.7" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblQuestion2" alignment="CENTER" layoutX="191.0" layoutY="370.0" prefHeight="158.0" prefWidth="746.0" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="241.6" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="190.60000000000002" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnYes2" layoutX="271.0" layoutY="535.0" mnemonicParsing="false" onAction="#voteYesInSecondReferendum" prefHeight="50.0" prefWidth="586.0" style="-fx-background-color: #99baf0;" text="DA" textAlignment="CENTER" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="270.6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#aca6a6" height="6.7" offsetX="2.5" radius="2.85" width="6.7" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnNo2" layoutX="271.0" layoutY="604.0" mnemonicParsing="false" onAction="#voteNoInSecondReferendum" prefHeight="50.0" prefWidth="586.0" style="-fx-background-color: #99baf0;" text="NU" textAlignment="CENTER" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="270.6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#aca6a6" height="6.7" offsetX="2.5" radius="2.85" width="6.7" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="imgVotedYes1" fitHeight="50.0" fitWidth="40.0" layoutX="222.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/check2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgVotedNo1" fitHeight="50.0" fitWidth="40.0" layoutX="222.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/check2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgVotedYes2" fitHeight="50.0" fitWidth="40.0" layoutX="222.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/check2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgVotedNo2" fitHeight="50.0" fitWidth="40.0" layoutX="222.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/check2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

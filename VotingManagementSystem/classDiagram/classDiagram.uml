@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1563.0" y="185.0">election.referendum.ReferendumPosition</node>
+    <node x="679.0" y="340.0">politicalParty.PoliticalParty</node>
+    <node x="1800.0" y="185.0">vote.ReferendumPairVote</node>
+    <node x="1155.0" y="185.0">vote.Vote</node>
+    <node x="532.0" y="265.0">election.EuropeanParliamentElection</node>
+    <node x="1888.0000000000002" y="110.0">JavaFX.admin.AdminController</node>
+    <node x="237.0" y="340.0">politicalParty.PoliticalPosition</node>
+    <node x="1254.0" y="340.0">webScraping.Scraping</node>
+    <node x="808.0" y="265.0">election.PresidentialElection</node>
+    <node x="1193.0" y="265.0">vote.ReferendumVote</node>
+    <node x="968.0000000000002" y="110.0">JavaFX.registration.RegistrationController</node>
+    <node x="1418.0" y="185.0">user.User</node>
+    <node x="172.0" y="265.0">election.ParliamentElection</node>
+    <node x="392.0" y="185.0">election.Election</node>
+    <node x="2076.0" y="110.0">JavaFX.elections.LocalController</node>
+    <node x="1398.0" y="265.0">user.Candidate</node>
+    <node x="724.0000000000002" y="110.0">JavaFX.elections.ElectionTypeController</node>
+    <node x="1212.0000000000002" y="110.0">JavaFX.elections.ParliamentController</node>
+    <node x="188.00000000000023" y="110.0">JavaFX.elections.EuropeanParliamentController</node>
+    <node x="2037.0" y="185.0">database.DatabaseOperations</node>
+    <node x="384.0" y="265.0">election.referendum.Referendum</node>
+    <node x="1858.0" y="340.0">JavaFX.Main</node>
+    <node x="1110.0000000000002" y="0.0">JavaFX.ParentController</node>
+    <node x="1411.0" y="340.0">election.enums.Question</node>
+    <node x="480.0000000000002" y="110.0">JavaFX.elections.PresidentialController</node>
+    <node x="1568.0" y="340.0">country.Country</node>
+    <node x="1061.0" y="265.0">vote.UserVote</node>
+    <node x="1073.0" y="340.0">election.enums.RoundNumber</node>
+    <node x="1668.0000000000002" y="110.0">JavaFX.admin.AdminMenuController</node>
+    <node x="466.0" y="340.0">election.enums.MandateDuration</node>
+    <node x="884.0" y="340.0">election.enums.ElectionType</node>
+    <node x="0.0" y="340.0">database.DatabaseConnection</node>
+    <node x="0.0" y="265.0">election.LocalElection</node>
+    <node x="1717.0" y="340.0">country.County</node>
+    <node x="1440.0000000000002" y="110.0">JavaFX.elections.ReferendumController</node>
+    <node x="0.0" y="110.0">JavaFX.registration.LogInController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="JavaFX.elections.PresidentialController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="592.0000000000002" y="70.0" />
+      <point x="1154.0000000000002" y="70.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="JavaFX.elections.LocalController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="2160.0" y="50.0" />
+      <point x="1277.2000000000003" y="50.0" />
+      <point x="79.20000000000005" y="15.0" />
+    </edge>
+    <edge source="JavaFX.admin.AdminMenuController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="1768.0000000000002" y="70.0" />
+      <point x="1242.0000000000002" y="70.0" />
+      <point x="44.0" y="15.0" />
+    </edge>
+    <edge source="JavaFX.elections.ReferendumController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="1544.0000000000002" y="80.0" />
+      <point x="1224.4" y="80.0" />
+      <point x="26.399999999999864" y="15.0" />
+    </edge>
+    <edge source="election.LocalElection" target="election.Election">
+      <point x="0.0" y="-15.0" />
+      <point x="76.0" y="235.0" />
+      <point x="403.2" y="235.0" />
+      <point x="-44.80000000000001" y="15.0" />
+    </edge>
+    <edge source="election.ParliamentElection" target="election.Election">
+      <point x="0.0" y="-15.0" />
+      <point x="268.0" y="245.0" />
+      <point x="425.6" y="245.0" />
+      <point x="-22.399999999999977" y="15.0" />
+    </edge>
+    <edge source="vote.ReferendumVote" target="vote.Vote">
+      <point x="0.0" y="-15.0" />
+      <point x="1273.0" y="240.0" />
+      <point x="1215.0" y="240.0" />
+      <point x="20.0" y="15.0" />
+    </edge>
+    <edge source="JavaFX.elections.ElectionTypeController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="836.0000000000002" y="80.0" />
+      <point x="1171.6000000000001" y="80.0" />
+      <point x="-26.40000000000009" y="15.0" />
+    </edge>
+    <edge source="election.referendum.Referendum" target="election.Election">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="JavaFX.elections.EuropeanParliamentController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="324.0000000000002" y="60.0" />
+      <point x="1136.4000000000003" y="60.0" />
+      <point x="-61.59999999999991" y="15.0" />
+    </edge>
+    <edge source="JavaFX.registration.LogInController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="84.0" y="50.0" />
+      <point x="1118.8000000000002" y="50.0" />
+      <point x="-79.20000000000005" y="15.0" />
+    </edge>
+    <edge source="user.Candidate" target="user.User">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="election.PresidentialElection" target="election.Election">
+      <point x="0.0" y="-15.0" />
+      <point x="912.0" y="235.0" />
+      <point x="492.8" y="235.0" />
+      <point x="44.80000000000001" y="15.0" />
+    </edge>
+    <edge source="JavaFX.admin.AdminController" target="JavaFX.ParentController">
+      <point x="-2.2737367544323206E-13" y="-15.0" />
+      <point x="1972.0" y="60.0" />
+      <point x="1259.6000000000001" y="60.0" />
+      <point x="61.59999999999991" y="15.0" />
+    </edge>
+    <edge source="JavaFX.elections.ParliamentController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="1316.0000000000002" y="90.0" />
+      <point x="1206.8000000000002" y="90.0" />
+      <point x="8.799999999999955" y="15.0" />
+    </edge>
+    <edge source="JavaFX.registration.RegistrationController" target="JavaFX.ParentController">
+      <point x="0.0" y="-15.0" />
+      <point x="1080.0000000000002" y="90.0" />
+      <point x="1189.2000000000003" y="90.0" />
+      <point x="-8.799999999999955" y="15.0" />
+    </edge>
+    <edge source="vote.UserVote" target="vote.Vote">
+      <point x="0.0" y="-15.0" />
+      <point x="1117.0" y="240.0" />
+      <point x="1175.0" y="240.0" />
+      <point x="-20.0" y="15.0" />
+    </edge>
+    <edge source="election.EuropeanParliamentElection" target="election.Election">
+      <point x="0.0" y="-15.0" />
+      <point x="660.0" y="245.0" />
+      <point x="470.4" y="245.0" />
+      <point x="22.399999999999977" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.659452296819788" x="1122.0" y="185.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>packageLocal</VISIBILITY>
+</Diagram>
+

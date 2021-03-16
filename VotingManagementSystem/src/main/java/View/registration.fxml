@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1128.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.registration.RegistrationController">
+   <children>
+      <AnchorPane layoutX="593.0" layoutY="40.0" prefHeight="702.0" prefWidth="478.0" style="-fx-background-color: #4299eb;" AnchorPane.bottomAnchor="27.600000000000023" AnchorPane.leftAnchor="593.0" AnchorPane.rightAnchor="56.59999999999991" AnchorPane.topAnchor="40.0">
+         <effect>
+            <DropShadow height="11.47" radius="5.235" width="11.47" />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="41.0" layoutY="33.0" prefHeight="32.0" prefWidth="394.0" text="Introduceți datele dumneavoastră:" textFill="WHITE" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="33.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLastName" layoutX="27.0" layoutY="116.0" prefHeight="42.0" prefWidth="198.0" promptText="Nume" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="89.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtFirstName" layoutX="241.0" layoutY="109.0" prefHeight="42.0" prefWidth="198.0" promptText="Prenume" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="89.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtEmail" layoutX="27.0" layoutY="167.0" prefHeight="42.0" prefWidth="424.0" promptText="Email" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="157.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <PasswordField fx:id="passPassword" layoutX="26.0" layoutY="230.0" prefHeight="42.0" prefWidth="424.0" promptText="Parolă" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="230.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></PasswordField>
+            <PasswordField fx:id="passConfirmPassword" layoutX="27.0" layoutY="298.0" prefHeight="42.0" prefWidth="424.0" promptText="Confirmă Parolă" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="298.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <DatePicker fx:id="dateBirthday" layoutX="26.0" layoutY="369.0" prefHeight="42.0" prefWidth="424.0" promptText="Data Nașterii" showWeekNumbers="true" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="369.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
+            <TextField fx:id="txtCNP" layoutX="27.0" layoutY="447.0" prefHeight="42.0" prefWidth="424.0" promptText="CNP" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="447.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Button fx:id="btnVote" defaultButton="true" layoutX="140.0" layoutY="531.0" mnemonicParsing="false" onAction="#setOnAction" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: #d63b27;" text="Votează" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="531.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="lblLastName" layoutX="27.0" layoutY="132.0" prefHeight="20.0" prefWidth="260.0" textFill="WHITE" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="151.0" AnchorPane.topAnchor="132.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFirstName" layoutX="139.0" layoutY="129.0" prefHeight="26.0" prefWidth="312.0" textFill="WHITE" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="129.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="27.0" layoutY="199.0" prefHeight="20.0" prefWidth="384.0" textFill="WHITE" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="199.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPassword" layoutX="26.0" layoutY="272.0" prefHeight="20.0" prefWidth="384.0" textFill="WHITE" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblConfirmPassword" layoutX="27.0" layoutY="340.0" prefHeight="20.0" prefWidth="384.0" textFill="WHITE" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="340.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBirthday" layoutX="26.0" layoutY="411.0" prefHeight="20.0" prefWidth="384.0" textFill="WHITE" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="411.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCNP" layoutX="26.0" layoutY="495.0" prefHeight="20.0" prefWidth="384.0" textFill="WHITE" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="495.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogIn" layoutX="359.0" layoutY="632.0" mnemonicParsing="false" onAction="#goToLogIn" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #27b882;" text="Conectare" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="13.800000000000097" AnchorPane.topAnchor="632.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="CENTER" layoutX="164.0" layoutY="649.0" text="Sunteți deja înregistrat?" textFill="WHITE" AnchorPane.rightAnchor="126.40000000000009">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </AnchorPane>
+      <ImageView fitHeight="333.0" fitWidth="424.0" layoutX="86.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="226.83993530273438" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="618.0" AnchorPane.topAnchor="226.0">
+         <image>
+            <Image url="@images/vote3.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
